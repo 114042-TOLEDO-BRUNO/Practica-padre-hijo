@@ -1,0 +1,11 @@
+<h1>Sala de chat</h1>
+<label>{{ titulo | uppercase }}</label>
+<div class="row">
+    <label for="exampleFormControlTextarea1"></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" disabled>{{ recibirMensajeDeUsuario }}</textarea>
+</div>
+<br>
+<hr>
+<div class="row">
+    <app-mensaje  (enviarEscritoAChat)="onMensajeRecibido($event)"></app-mensaje>
+</div>

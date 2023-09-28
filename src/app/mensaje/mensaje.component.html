@@ -1,0 +1,6 @@
+<div class="row">
+    <label for="item-input">Mensaje</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled [value]="mensaje.value"></textarea>
+    <input type="text" id="item-input" #mensaje>
+    <button type="button" class="btn btn-primary" (click)="onEnviarEscritoAChat(mensaje.value)">ENviar</button>
+</div>
